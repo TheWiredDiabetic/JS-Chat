@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    margin-top: 10px;
+}
+
+form input {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
