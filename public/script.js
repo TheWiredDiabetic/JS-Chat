@@ -19,6 +19,7 @@ function joinChat() {
   if (username.trim() !== '') {
     socket = io();
     socket.emit('join', username);
+    document.title(username + ' | Material Chat [BETA]')
 
     $('#username-container').addClass('hide');
     $('#chat-container').removeClass('hide');
