@@ -1,0 +1,16 @@
+{
+    "name": "webpc-chat",
+    "version": "1.0.0",
+    "description": "A simple chat application",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "http": "0.0.1-security",
+      "socket.io": "^4.0.1"
+    }
+  }
+  
+  
