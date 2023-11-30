@@ -172,9 +172,9 @@ body {
   #warning {
     display: flex;
     align-items: center;
-    background-color: #FFEB3B; /* Lighter orange color */
-    color: #FF5722; /* Darker orange color for text */
-    border: 1px solid #FFC107; /* Border color */
+    background-color: #b18b3f; /* Lighter orange color */
+    color: #99391c; /* Darker orange color for text */
+    border: 1px solid #ffa007; /* Border color */
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 10px;
