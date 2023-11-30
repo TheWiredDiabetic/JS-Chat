@@ -11,12 +11,18 @@ app.use(express.static('public'));
 io.on('connection', (socket) => {
   console.log('A user connected');
 
-  socket.on('chat message', (msg) => {
-    io.emit('chat message', msg);
+  socket.on('join', (username) => {
+    io.emit('chat message', { username, message: 'has joined the chat', type: 'join' });
+    socket.username = username; // Store the username in the socket for later use
+  });
+
+  socket.on('chat message', (data) => {
+    io.emit('chat message', data);
   });
 
   socket.on('disconnect', () => {
-    console.log('User disconnected');
+    const username = socket.username || 'User';
+    io.emit('chat message', { username, message: 'has left the chat', type: 'leave' });
   });
 });
 
